@@ -1,0 +1,235 @@
+[main] WARN soot.jimple.infoflow.methodSummary.data.provider.LazySummaryProvider - Lazy loading summaries from a jar/zip file might throw a ClosedChannelException. Use the EagerSummaryProvider instead.
+[main] INFO soot.jimple.infoflow.cmd.MainClass - Analyzing app /home/micsispa/Downloads/APKs/mynt.app.apk (1 of 1)...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Initializing Soot...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Loading dex files...
+[main] WARN soot.dexpler.DexFileProvider - Multiple dex files detected, only processing 'classes.dex'. Use '-process-multiple-dex' option to process them all.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.038931617 seconds
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 889.2 MiB
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 83 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class androidx.startup.InitializationProvider
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 83 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 28 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 83 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 7 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 83 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 4 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 83 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.BroadcastReceiverEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$a, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ServiceEntryPointCreator - Cannot create valid constructor for com.onesignal.f3$b, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 3 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Callback analysis terminated normally
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Entry point calculation done.
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.config.http.CsrfBeanDefinitionParser: org.springframework.beans.factory.config.BeanDefinition getCsrfLogoutHandler)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.config.http.FormLoginBeanDefinitionParser: java.lang.String getLoginPage)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <com.google.auth.oauth2.UserCredentials: java.lang.String getClientSecret)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.web.servlet.tags.UrlTag: java.lang.String createUrl)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.RequestData: java.lang.String getMethod)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.dmfs.oauth2.client.http.requests.ResourceOwnerPasswordTokenRequest: org.dmfs.httpclient.HttpRequestEntity requestEntity)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.concurrent.DelegatingSecurityContextExecutorService: java.util.concurrent.ExecutorService getDelegate)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.config.annotation.web.builders.HttpSecurity: org.springframework.security.config.'annotation'.web.configurers.HeadersConfigurer headers)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.web.servlet.tags.EscapeBodyTag: java.lang.String readBodyContent)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.config.http.FormLoginBeanDefinitionParser: java.lang.String getLoginProcessingUrl)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.springframework.security.config.annotation.web.configurers.LogoutConfigurer: java.util.List getLogoutHandlers)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.RequestData: java.lang.String getHttpVersion)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.HttpServletRequestImpl: void parseParameters)> -> _SOURCE_
+[main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match:     
+[main] INFO soot.jimple.infoflow.android.source.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 71 sources, 193 sinks, and 123 callback methods.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 35 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /home/micsispa/Downloads/APKs/mynt.app.apk with 71 sources and 193 sinks...
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 889.2 MiB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 0.550287884 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 11592 edges
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
+[main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
+[main] WARN soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Running with limited join point abstractions can break context-sensitive path builders
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Source lookup done, found 35 sources and 152 sinks.
+[Low memory monitor] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Triggering memory warning at 945 MB (1035 MB max, 937 in watched memory pool)...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 227440
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 569618
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 1840925 forward and 1075987 backward edges solved in 18 seconds, processing 23 results...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 946 MB
+[Low memory monitor] WARN soot.jimple.infoflow.memory.FlowDroidMemoryWatcher - Running out of memory, solvers terminated
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 344 MB
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 1 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 2 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 3 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 4 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 5 with 3 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 348 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Path reconstruction took 1 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)>("OneSignal", $r0, $r1) in method <com.onesignal.r3: void b(int,java.lang.String,java.lang.Throwable)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r8.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.j4$b: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.z1: java.util.ArrayList c()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r11.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.onesignal.g2: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i2) in method <com.onesignal.OSNotificationRestoreWorkManager: void b(android.content.Context,android.database.Cursor,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r8.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.j4$b: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r6 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.z1: java.util.ArrayList c()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r19.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.o0: void a(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.onesignal.OSNotificationRestoreWorkManager: void b(android.content.Context,android.database.Cursor,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $z0 = virtualinvoke $r8.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r7, r0, 33) in method <a4.n0$c: void a(a4.n0$c$a)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r21 = virtualinvoke $r19.<android.content.pm.PackageManager: java.util.List queryIntentServices(android.content.Intent,int)>($r20, 0) in method <a4.n0$c: boolean handleMessage(android.os.Message)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("OneSignal", $r0, $r1) in method <com.onesignal.r3: void b(int,java.lang.String,java.lang.Throwable)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r8.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.j4$b: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.z1: java.util.ArrayList c()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r11.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.onesignal.g2: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i2) in method <com.onesignal.OSNotificationRestoreWorkManager: void b(android.content.Context,android.database.Cursor,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r8.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.j4$b: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r6 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.z1: java.util.ArrayList c()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r19.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.o0: void a(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.onesignal.OSNotificationRestoreWorkManager: void b(android.content.Context,android.database.Cursor,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("NotifManCompat", $r13) in method <a4.n0$c: boolean handleMessage(android.os.Message)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r21 = virtualinvoke $r19.<android.content.pm.PackageManager: java.util.List queryIntentServices(android.content.Intent,int)>($r20, 0) in method <a4.n0$c: boolean handleMessage(android.os.Message)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String,java.lang.Throwable)>("OneSignal", $r0, $r1) in method <com.onesignal.r3: void b(int,java.lang.String,java.lang.Throwable)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r8.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.j4$b: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.z1: java.util.ArrayList c()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r11.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.onesignal.g2: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i2) in method <com.onesignal.OSNotificationRestoreWorkManager: void b(android.content.Context,android.database.Cursor,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r19.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.o0: void a(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r8.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.j4$b: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r6 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.z1: java.util.ArrayList c()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.onesignal.OSNotificationRestoreWorkManager: void b(android.content.Context,android.database.Cursor,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("NotifManCompat", $r13) in method <a4.n0$c: boolean handleMessage(android.os.Message)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r21 = virtualinvoke $r19.<android.content.pm.PackageManager: java.util.List queryIntentServices(android.content.Intent,int)>($r20, 0) in method <a4.n0$c: boolean handleMessage(android.os.Message)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $r4 = virtualinvoke $r4.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("$[notif_count]", $r18) in method <com.onesignal.r: void d(com.onesignal.j2,com.onesignal.r$a)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r17 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <ci.e: android.database.Cursor n(android.content.Context,com.onesignal.c4,java.lang.String,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r22 = interfaceinvoke $r19.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.r: void d(com.onesignal.j2,com.onesignal.r$a)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putCharSequence(java.lang.String,java.lang.CharSequence)>("android.title.big", $r3) in method <a4.d0: void a(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r17 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <ci.e: android.database.Cursor n(android.content.Context,com.onesignal.c4,java.lang.String,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r22 = interfaceinvoke $r19.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.r: void d(com.onesignal.j2,com.onesignal.r$a)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $r5 = virtualinvoke $r4.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.r: android.graphics.Bitmap g(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r17 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <ci.e: android.database.Cursor n(android.content.Context,com.onesignal.c4,java.lang.String,boolean)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r22 = interfaceinvoke $r19.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.r: void d(com.onesignal.j2,com.onesignal.r$a)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)>("OneSignal", $r0, $r1) in method <com.onesignal.r3: void b(int,java.lang.String,java.lang.Throwable)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r8.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.j4$b: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.z1: java.util.ArrayList c()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r11.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.onesignal.g2: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i2) in method <com.onesignal.OSNotificationRestoreWorkManager: void b(android.content.Context,android.database.Cursor,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r8.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.j4$b: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r6 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.z1: java.util.ArrayList c()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r19.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.o0: void a(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.onesignal.OSNotificationRestoreWorkManager: void b(android.content.Context,android.database.Cursor,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)>("OneSignal", $r0, $r1) in method <com.onesignal.r3: void b(int,java.lang.String,java.lang.Throwable)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r8.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.j4$b: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.z1: java.util.ArrayList c()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r5 = interfaceinvoke $r11.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.onesignal.g2: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i2) in method <com.onesignal.OSNotificationRestoreWorkManager: void b(android.content.Context,android.database.Cursor,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r18 = virtualinvoke $r8.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.onesignal.j4$b: void run()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r6 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.z1: java.util.ArrayList c()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r19.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.onesignal.o0: void a(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r2 = interfaceinvoke $r1.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.onesignal.OSNotificationRestoreWorkManager: void b(android.content.Context,android.database.Cursor,int)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 21 seconds. Maximum memory consumption: 946 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 11 leaks

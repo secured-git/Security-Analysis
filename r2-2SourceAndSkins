@@ -1,8 +1,0 @@
-# Sources
-<com.yourdelivery.pyszne.AccountManager: void getUserProfile()> -> _SOURCE_
-<com.yourdelivery.pyszne.AuthManager: String getAuthToken()> -> _SOURCE_
-
-# Sinks
-<com.yourdelivery.pyszne.AccountManager: void deleteAccount(java.lang.String)> -> _SINK_
-<com.yourdelivery.pyszne.ApiClient: void deleteUser(java.lang.String)> -> _SINK_
-

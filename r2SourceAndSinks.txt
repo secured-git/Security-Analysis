@@ -1,8 +1,0 @@
-# Sources
-<android.accounts.AccountManager: android.accounts.Account[] getAccounts()> -> _SOURCE_
-<com.example.app.AccountManager: void deleteAccount(java.lang.String)> -> _SINK_
-
-# Sinks
-<java.io.File: boolean delete()> -> _SINK_
-<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])> -> _SINK_
-

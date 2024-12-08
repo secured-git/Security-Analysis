@@ -1,0 +1,17 @@
+[main] WARN soot.jimple.infoflow.methodSummary.data.provider.LazySummaryProvider - Lazy loading summaries from a jar/zip file might throw a ClosedChannelException. Use the EagerSummaryProvider instead.
+[main] INFO soot.jimple.infoflow.cmd.MainClass - Analyzing app /home/ls/Downloads/stproject/APKs/com.yourdelivery.pyszne.apk (1 of 1)...
+The data flow analysis has failed. Error message: Range [-1, 18) out of bounds for length 18
+java.lang.StringIndexOutOfBoundsException: Range [-1, 18) out of bounds for length 18
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4865)
+	at java.base/java.lang.String.substring(String.java:2834)
+	at java.base/java.lang.String.substring(String.java:2807)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1473)
+	at soot.jimple.infoflow.cmd.MainClass.run(MainClass.java:358)
+	at soot.jimple.infoflow.cmd.MainClass.main(MainClass.java:256)
