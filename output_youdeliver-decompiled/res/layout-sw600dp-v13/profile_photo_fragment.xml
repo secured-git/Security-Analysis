@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/RelativeLayout1" android:background="@drawable/bg_wood" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@android:color/black" android:gravity="center" android:id="@id/ProfilePhotoDescription" android:background="@color/bg_grey" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profilePhotoDescription" />
+    <LinearLayout android:id="@id/LinearLayout1" android:background="@color/bg_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ProfilePhotoDescription" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ProfilePhoto" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/no_user_photo" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/TakePhoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/takePhoto" android:drawableLeft="@drawable/icon_photo" style="@style/green_button" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="16.0dip" android:textStyle="italic" android:layout_gravity="center_horizontal" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/or" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/ChoosePhoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pickPhoto" android:drawableLeft="@drawable/icon_gallery" style="@style/green_button" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

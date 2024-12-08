@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_action_account" android:id="@id/AccountMenuTitle" android:orderInCategory="10" android:title="@string/account" android:showAsAction="always">
+        <menu>
+            <item android:icon="@drawable/ic_menu_order" android:id="@id/HomeMenu" android:title="@string/orderNowMenu" />
+            <item android:icon="@drawable/ic_accountmenu_account" android:id="@id/AccountMenu" android:title="@string/main_account" />
+            <item android:icon="@drawable/ic_accountmenu_address" android:id="@id/AddressMenu" android:title="@string/main_address" />
+            <item android:icon="@drawable/ic_accountmenu_favorites" android:id="@id/FavoritesMenu" android:title="@string/main_favorits" />
+            <item android:icon="@drawable/ic_accountmenu_orders" android:id="@id/OrdersMenu" android:title="@string/main_orders" />
+            <item android:icon="@drawable/ic_accountmenu_fidelity" android:id="@id/FidelityPointsMenu" android:title="@string/main_points" />
+            <item android:icon="@drawable/ic_accountmenu_stampcard" android:id="@id/StampsMenu" android:title="@string/stamp_cards" />
+            <item android:icon="@drawable/ic_accountmenu_bonus" android:id="@id/BonusShopMenu" android:title="@string/bonus_shop" />
+            <item android:icon="@drawable/ic_menu_inbox" android:id="@id/InboxMenu" android:title="@string/inbox" />
+            <item android:icon="@drawable/ic_menu_imprint" android:id="@id/MoreMenu" android:title="@string/more_menu" />
+            <item android:icon="@drawable/ic_menu_logout" android:id="@id/LogoutMenu" android:title="@string/menuLogout" />
+        </menu>
+    </item>
+</menu>

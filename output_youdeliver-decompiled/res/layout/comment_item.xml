@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:droidfu="http://github.com/droidfu/schema">
+    <ImageView android:id="@id/UserPhoto" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/no_user_photo" android:scaleType="fitXY" />
+    <TextView android:id="@id/CommentText" android:background="@drawable/comment_bg" android:paddingLeft="14.0dip" android:paddingTop="6.0dip" android:paddingRight="14.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="235 sfs we ew wet wweitwe yjhgdf hs " android:singleLine="false" />
+</LinearLayout>

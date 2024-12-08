@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:background="#ffe6e3e4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/RestaurantColumn1" android:padding="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/RestaurantLogo" android:scaleType="fitXY" style="@style/RestaurantLogo" />
+                <ImageView android:id="@id/NewRestaurant" android:paddingLeft="3.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_label" android:layout_alignBottom="@id/RestaurantLogo" />
+            </RelativeLayout>
+            <com.yopeso.lieferando.view.EllipsizingTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:gravity="left" android:id="@id/RestaurantName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="asf asd sadasd gsddgasaaaaaaaaaaaaaaaa" android:lines="1" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/RestaurantColumn2" android:padding="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/RestaurantLogo1" android:scaleType="fitXY" style="@style/RestaurantLogo" />
+                <ImageView android:id="@id/NewRestaurant1" android:paddingLeft="3.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_label" android:layout_alignBottom="@id/RestaurantLogo1" />
+            </RelativeLayout>
+            <com.yopeso.lieferando.view.EllipsizingTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:gravity="left" android:id="@id/RestaurantName1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="asf asd sadasd gsddgas" android:lines="1" android:singleLine="true" />
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

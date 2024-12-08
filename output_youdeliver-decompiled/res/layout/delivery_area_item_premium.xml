@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/RelativeLayout1" android:background="@android:color/white" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="16.0sp" android:textStyle="bold" android:id="@id/CityZIP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="München (80909)" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:id="@id/Street" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Marienstrastr. 1" android:layout_below="@id/CityZIP" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/openinggsLL" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/Street">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/openingScheduleHeader" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:id="@id/openings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00-11:00" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/openinggsLL" android:layout_below="@id/Street">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filterMinCost" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:id="@id/minimumOrder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="from 10,00€" />
+    </LinearLayout>
+    <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_action_account" android:id="@id/LoginMenuTitle" android:orderInCategory="10" android:title="@string/account">
+        <menu>
+            <item android:icon="@drawable/ic_menu_login" android:id="@id/LoginMenu" android:title="@string/menuLogin" />
+            <item android:icon="@drawable/ic_menu_signup" android:id="@id/RegisterMenu" android:title="@string/menuRegister" />
+            <item android:icon="@drawable/ic_menu_how" android:id="@id/ForgotPassword" android:visible="true" android:title="@string/forgot_password_button_text" />
+            <item android:icon="@drawable/ic_menu_inbox" android:id="@id/InboxMenu" android:title="@string/inbox" />
+            <item android:icon="@drawable/ic_menu_imprint" android:id="@id/MoreMenu" android:title="@string/more_menu" />
+        </menu>
+    </item>
+</menu>

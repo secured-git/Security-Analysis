@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chef_bust" android:scaleType="fitStart" android:adjustViewBounds="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-35.0dip">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/text_green" android:gravity="center" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:text="@string/thank_you" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/text_green" android:gravity="center" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/order_was_delivered" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center" android:id="@id/totalOrderCost" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <TextView android:textSize="16.0dip" android:gravity="center" android:id="@id/CallDetails" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:text="@string/call_us" />
+            <TextView android:gravity="center" android:autoLink="phone" android:id="@id/CallNumber" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0000" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/tweeterLL" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@id/twittertext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/tweeterText" />
+        <ImageView android:id="@id/twitterButton" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/btn_tweet" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/RestOrderDetails" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/notebook_top" android:scaleType="fitXY" />
+        <include android:id="@id/NotebookLayout_ref" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/notebook_layout" />
+    </LinearLayout>
+    <WebView android:id="@id/WebAdd" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/RestWaiting" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/Waitingbar" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

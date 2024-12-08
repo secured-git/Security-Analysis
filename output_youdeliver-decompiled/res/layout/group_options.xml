@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/keyGroupView" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/groupView" android:background="@color/takeaway_gray" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/list_title_size" android:textStyle="bold" android:textColor="#ff3983b1" android:id="@id/numberOfOption" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1." android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/optionDrawableRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/minus_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center" android:id="@id/plusMinusButton" android:background="@drawable/minus_grey_btn_selector" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_alignParentRight="true">
+                <TextView android:textStyle="bold" android:id="@id/plusMinusButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/optionName" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="optionName" android:layout_toLeftOf="@id/itemsSelectedRaport" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/itemsSelectedRaport" android:paddingLeft="2.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="0/1" android:layout_toLeftOf="@id/plusMinusButton" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/LayoutWithSelectedItem" android:background="@color/menu_extra_green" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/selectedItemLayout" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

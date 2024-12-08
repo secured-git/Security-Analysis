@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/item" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="02.11.2900 12:30" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textStyle="bold" android:id="@id/message" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Some message asd asd asd asd asd asd as s as asd sad asd asd as" android:layout_below="@id/time" />
+    <View android:layout_marginTop="3.0dip" android:layout_below="@id/message" style="@style/Divider" />
+</RelativeLayout>

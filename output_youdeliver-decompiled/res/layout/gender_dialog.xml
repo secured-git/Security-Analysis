@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:id="@id/gender_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/MaleButton" android:layout_width="wrap_content" android:layout_height="117.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/gender_male" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/WomanButton" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/gender_woman" />
+</LinearLayout>

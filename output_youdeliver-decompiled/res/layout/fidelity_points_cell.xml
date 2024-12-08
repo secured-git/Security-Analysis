@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerRL" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/pointImageRL" android:background="@drawable/circle_fidelity_point_item" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_margin="3.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/FidelityPoints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+211" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:textColor="#ff5b5b5b" android:id="@id/PointsDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Description asd asd asd asd asd asdadasdasdasdsd asd s" android:layout_toRightOf="@id/pointImageRL" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ArrowRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/fp_next_arrow" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/dotted_line_list_view_devider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/headerRL" />
+</RelativeLayout>

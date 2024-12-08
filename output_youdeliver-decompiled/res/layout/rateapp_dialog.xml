@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/titleTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/rate_app_content" />
+    <Button android:textStyle="bold" android:id="@id/button5Stars" android:layout_width="@dimen/button_rateapp_dialog_with" android:layout_height="wrap_content" android:layout_margin="@dimen/button_rateapp_dialog_margin" android:text="@string/stars5" style="@style/green_button" />
+    <Button android:id="@id/button4Stars" android:layout_width="@dimen/button_rateapp_dialog_with" android:layout_height="wrap_content" android:layout_margin="@dimen/button_rateapp_dialog_margin" android:text="@string/stars4" style="@style/green_button" />
+    <Button android:id="@id/button3Stars" android:layout_width="@dimen/button_rateapp_dialog_with" android:layout_height="wrap_content" android:layout_margin="@dimen/button_rateapp_dialog_margin" android:text="@string/stars3" style="@style/green_button" />
+    <Button android:id="@id/button2Stars" android:layout_width="@dimen/button_rateapp_dialog_with" android:layout_height="wrap_content" android:layout_margin="@dimen/button_rateapp_dialog_margin" android:text="@string/stars2" style="@style/green_button" />
+    <Button android:id="@id/button1Stars" android:layout_width="@dimen/button_rateapp_dialog_with" android:layout_height="wrap_content" android:layout_margin="@dimen/button_rateapp_dialog_margin" android:text="@string/star1" style="@style/green_button" />
+    <Button android:id="@id/buttonRateLater" android:layout_width="@dimen/button_rateapp_dialog_with" android:layout_height="wrap_content" android:layout_margin="@dimen/button_rateapp_dialog_margin" android:text="@string/rate_later" style="@style/green_button" />
+</LinearLayout>

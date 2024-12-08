@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/SearchMainLayout" android:background="@drawable/bg_wood" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/DynamicHeader" android:scrollbars="none" android:clickable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/html_header_height" android:layout_marginRight="-10.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/SearchListView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:stackFromBottom="true" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="10.0dip" android:layout_below="@id/SearchLayout" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/SearchLayout" android:background="#55303030" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <com.yopeso.lieferando.view.LocateView android:id="@id/LocateView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/location_icon" />
+            <com.yopeso.lieferando.view.CustomAutoCompleteTextView android:textColor="@color/black" android:layout_gravity="center" android:id="@id/SearchView" android:background="@drawable/search_input_2" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:hint="@string/searchSuggestion" android:ems="10" android:maxLength="5" android:layout_toRightOf="@id/LocateView" android:layout_alignTop="@id/LocateView" android:layout_alignBottom="@id/LocateView" android:layout_alignParentTop="true" android:inputType="phone" android:imeOptions="actionGo" />
+        </RelativeLayout>
+        <include android:id="@id/login_layout_ref" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/SearchLayout" layout="@layout/search_login_layout" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+!!brut.androlib.apk.ApkInfo
+apkFileName: com.yourdelivery.pyszne.apk
+doNotCompress:
+- resources.arsc
+- png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+resourcesAreCompressed: false
+sdkInfo:
+  minSdkVersion: '8'
+  targetSdkVersion: '21'
+sharedLibrary: false
+sparseResources: true
+unknownFiles:
+  license.txt: '8'
+  documentationImage1.png: '8'
+  main/AndroidManifest.xml: '8'
+  main/project.properties: '8'
+  main/.settings/org.eclipse.jdt.core.prefs: '8'
+  org/apache/http/entity/mime/version.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.8.1
+versionInfo:
+  versionCode: '129'
+  versionName: 3.6.1

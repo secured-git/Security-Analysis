@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/OrderView" android:background="@drawable/list_item_selector" android:paddingLeft="2.0dip" android:paddingTop="4.0dip" android:paddingRight="2.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/RestaurantLogo" android:src="@drawable/ic_launcher" style="@style/RestaurantLogo" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.yopeso.lieferando.view.EllipsizingTextView android:textSize="@dimen/rest_title_text_size" android:textStyle="bold" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/RestaurantName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium Text Long long long long veryyyyyy" android:lines="1" android:singleLine="true" />
+            <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/text_grey" android:id="@id/RestaurantPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_phone" />
+            <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/text_grey" android:id="@id/OrderDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="-20.0dip" android:lines="1" android:drawableLeft="@drawable/icon_grey_watch" />
+            <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/text_grey" android:id="@id/OrderCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_shopping" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <RatingBar android:layout_gravity="center_vertical" android:id="@id/RestaurantRating1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="0.0" android:isIndicator="true" style="@style/CustomRatingBar" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/text_grey" android:id="@id/RatedStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <ImageView android:id="@id/imageView2" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_centerVertical="true" />
+            <LinearLayout android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/heart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/heart" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/devider_restaurants_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layerType="software" />
+</LinearLayout>

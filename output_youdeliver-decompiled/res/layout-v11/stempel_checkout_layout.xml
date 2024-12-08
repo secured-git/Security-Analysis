@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/StempelLayout" android:background="@drawable/checkout_items_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_primary_text_size" android:textStyle="bold" android:textColor="@color/text_grey" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rebates_and_stempel_cards" android:drawableLeft="@drawable/icon_stempelkarte" />
+    <ImageView android:id="@id/dividerHeader" android:background="@drawable/devider_restaurants_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layerType="software" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="11.0dip" android:id="@id/stamle_msg" android:paddingLeft="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stempel_login_to_use" />
+        <LinearLayout android:orientation="vertical" android:id="@id/StempelListLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

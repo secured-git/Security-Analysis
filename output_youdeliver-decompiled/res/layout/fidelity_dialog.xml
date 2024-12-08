@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/address_edit_bg" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/CirclePoints" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/circleIV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/success_fp_icon" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="40.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/PointsForOrder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fidelity_margin_left" android:layout_marginTop="@dimen/fidelity_margin_top" android:text="   P" />
+        <ImageView android:id="@id/stampsIV" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="0.0dip" android:src="@drawable/success_stampcard_icon" android:layout_below="@id/PointsForOrder" />
+    </RelativeLayout>
+    <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/CongratsTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/voucherHeader" android:layout_toRightOf="@id/CirclePoints" />
+    <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:id="@id/PointsGained" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" android:text="@string/fidelity_points_received" android:layout_toRightOf="@id/CirclePoints" android:layout_below="@id/CongratsTV" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/PointsForOrder1" android:background="@drawable/dialog_background_rounded" android:padding="10.0dip" android:paddingTop="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-14.0dip" android:text="@string/points_for_order" android:layout_below="@id/linearLayout2" android:layout_alignLeft="@id/linearLayout1" android:layout_alignRight="@id/linearLayout1" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout11" android:background="@drawable/fp_dialog_header" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_points" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/PointsGained1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gained_points" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/points_freemeal" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:background="@drawable/st_dialog_header" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:layout_below="@id/linearLayout1" android:layout_alignLeft="@id/PointsForOrder1" android:layout_alignRight="@id/PointsForOrder1">
+        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_st_dialog" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/StempelGained" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gained_stempel" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stempel_msg" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:id="@id/CloseButton" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-10.0dip" android:layout_alignRight="@id/linearLayout1" android:layout_alignParentTop="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/Star1" android:background="@drawable/rating_button_selector" android:layout_width="@dimen/rating_order_star" android:layout_height="@dimen/rating_order_star" android:layout_marginRight="9.0dip" />
+    <Button android:id="@id/Star2" android:background="@drawable/rating_button_selector" android:layout_width="@dimen/rating_order_star" android:layout_height="@dimen/rating_order_star" android:layout_marginRight="9.0dip" />
+    <Button android:id="@id/Star3" android:background="@drawable/rating_button_selector" android:layout_width="@dimen/rating_order_star" android:layout_height="@dimen/rating_order_star" android:layout_marginRight="9.0dip" />
+    <Button android:id="@id/Star4" android:background="@drawable/rating_button_selector" android:layout_width="@dimen/rating_order_star" android:layout_height="@dimen/rating_order_star" android:layout_marginRight="9.0dip" />
+    <Button android:id="@id/Star5" android:background="@drawable/rating_button_selector" android:layout_width="@dimen/rating_order_star" android:layout_height="@dimen/rating_order_star" />
+</LinearLayout>

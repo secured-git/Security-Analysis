@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/fp_bottom" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/FpFooterTitle" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fp_footer_title" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/list_secondary_text_size" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/FpFooterDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fp_footer_description" android:layout_below="@id/FpFooterTitle" android:layout_alignRight="@id/FpFooterTitle" />
+</RelativeLayout>

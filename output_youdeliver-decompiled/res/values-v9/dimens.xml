@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_secondary_text_size">8.0dip</dimen>
+    <dimen name="rating_order_star">25.0dip</dimen>
+    <dimen name="fidelity_margin_top">0.0dip</dimen>
+    <dimen name="fidelity_margin_left">0.0dip</dimen>
+    <dimen name="fidelity_text_size">33.0sp</dimen>
+    <dimen name="top_margin_search_long">70.0dip</dimen>
+    <dimen name="search_field_margin">90.0dip</dimen>
+    <dimen name="sign_up_text_size">10.0dip</dimen>
+    <dimen name="sign_up_link_text_size">11.0dip</dimen>
+    <dimen name="cart_background_padding">1.0dip</dimen>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/RelativeLayout1" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/HostScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="vertical" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/checkout_items_bg" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/HeaderPayment" android:padding="12.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_method_select" />
+                <ImageView android:id="@id/dividerHeader" android:background="@drawable/devider_restaurants_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/HeaderPayment" android:layerType="software" />
+                <LinearLayout android:orientation="vertical" android:id="@id/PriceLayout" android:background="@drawable/order_amount_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="-10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/PaymentLayoutWrapper">
+                    <LinearLayout android:orientation="vertical" android:id="@id/TotalPriceDetails" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_value" />
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:gravity="right" android:id="@id/orderTotal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0€" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/DeliveryValueLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delivery_value" />
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:gravity="right" android:id="@id/deliveryValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0€" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ECValueLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textColor="@android:color/white" android:id="@id/ECTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ec_payment" />
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:gravity="right" android:id="@id/ECValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0€" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/StempelValueLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stempel_value" />
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:gravity="right" android:id="@id/stempelValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0€" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/VoucherValueLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voucher_value" />
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:gravity="right" android:id="@id/voucherValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0€" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/RebateValueLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textColor="@android:color/white" android:id="@id/rebateTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rebate_title" />
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:gravity="right" android:id="@id/rebateValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0€" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_price" />
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="right" android:id="@id/TotalPrice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0€" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/PaymentLayoutWrapper" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/dividerHeader">
+                    <LinearLayout android:orientation="vertical" android:id="@id/PaymentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/CashRadioLL" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RadioButton android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/CashRadio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cash" />
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/CashRadioFee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="(€ 0,50)" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ECPaymentRadioLL" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RadioButton android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/ECPaymentRadio" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ec_payment" android:drawableRight="@drawable/ec_checkout" android:drawablePadding="7.0dip" />
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/ECPaymentRadioFee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="(€ 0,50)" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/PayURadioLL" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RadioButton android:id="@id/PayURadio" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:drawableRight="@drawable/payu" />
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/PayURadioFee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/EbankingRadioLL" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RadioButton android:id="@id/EbankingRadio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:drawableRight="@drawable/sofort" />
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/EbankingRadioFee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="(€ 0,50)" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ClickAndBuyRadioLL" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RadioButton android:id="@id/ClickAndBuyRadio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:drawableRight="@drawable/cnb" />
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/ClickAndBuyRadioFee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="(€ 0,50)" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/PaypalRadioLL" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RadioButton android:id="@id/PaypalRadio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:drawableRight="@drawable/payment_paypal" />
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/PaypalRadioFee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="(€ 0,50)" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RadioButton android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/CardRadio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/credit_card" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/CardPaymentIcons" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/payment_mastercard" />
+                                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/payment_visa" />
+                                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/payment_amex" />
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/CardRadioFee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="(€ 0,50)" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/list_secondary_text_size" android:id="@id/PaymentDetails" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/DeliveryTimeBox" android:background="@drawable/checkout_items_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="7.0dip">
+                <LinearLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/delivery_time" />
+                    <RadioGroup android:gravity="right" android:orientation="horizontal" android:id="@id/DeliverTimeGroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ToggleButton android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/toggle_text_color" android:id="@id/DeliverNow" android:background="@drawable/blue_toggle_button" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:checked="true" android:textOn="@string/order_immediately" android:textOff="@string/order_immediately" android:lines="1" />
+                        <ToggleButton android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/toggle_text_color" android:id="@id/DeliverPreorder" android:background="@drawable/blue_toggle_button" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:textOn="@string/order_pre_order" android:textOff="@string/order_pre_order" android:lines="1" />
+                    </RadioGroup>
+                </LinearLayout>
+                <ImageView android:background="@drawable/devider_restaurants_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layerType="software" />
+                <TextView android:textSize="@dimen/list_primary_text_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/DeliverDetails" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/soon_as_possible" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/checkout_items_bg" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/DeliverAddressLayout" android:background="@drawable/background_red_rounded" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/AddressHeader" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delvieryAddress" />
+                            <RelativeLayout android:id="@id/matanpizda" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="2.0dip">
+                                <ImageView android:id="@id/LocateAddress" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/location_found" android:layout_toRightOf="@id/LocateAddress" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                <Button android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/toggle_text_color" android:ellipsize="end" android:id="@id/StandardAddressButton" android:background="@drawable/toggle_blue_off" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/addStandardAddress" android:lines="1" android:layout_toLeftOf="@id/LocateAddress" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <ImageView android:background="@drawable/devider_restaurants_list" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layerType="software" />
+                        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/AddressName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/AddressStreet" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_grey" android:id="@id/AddressPostalCode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_grey" android:id="@id/AddressPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_grey" android:id="@id/AddressEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/AddressIncomplete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/address_incomplete" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/checkout_items_bg" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/list_primary_text_size" android:textStyle="bold" android:textColor="@color/text_grey" android:gravity="center|left" android:id="@id/textView1" android:layout_width="@dimen/text_label_width" android:layout_height="wrap_content" android:text="@string/special_instructions" android:drawableLeft="@drawable/ic_action_warning" />
+                <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="@dimen/list_primary_text_size" android:gravity="center|left|top" android:id="@id/SpecialInstructions" android:background="@android:color/transparent" android:padding="4.0dip" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLength="500" android:inputType="text" android:imeOptions="actionDone" />
+                    <ImageView android:background="@drawable/devider_restaurants_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/HeaderPayment" android:layerType="software" /> ></LinearLayout>
+            </LinearLayout>
+            <com.yopeso.lieferando.view.VoucherView android:id="@id/VoucherView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <com.yopeso.lieferando.view.StempleView android:id="@id/StempleView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="66.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/LinearLayout1" android:background="#b3ffffff" android:padding="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <Button android:enabled="true" android:id="@id/SubmitOrder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/submit_order" style="@style/green_button" />
+    </LinearLayout>
+</RelativeLayout>

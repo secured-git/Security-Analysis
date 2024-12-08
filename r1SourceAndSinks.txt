@@ -1,0 +1,17 @@
+# Location sources
+<android.location.Location: double getLatitude()> -> _SOURCE_
+<android.location.Location: double getLongitude()> -> _SOURCE_
+<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)> -> _SOURCE_
+
+# Network sinks
+<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)> -> _SINK_
+<java.net.HttpURLConnection: void execute()> -> _SINK_
+<java.net.URLConnection: java.io.OutputStream getOutputStream()> -> _SINK_
+<java.net.URLConnection: void connect()> -> _SINK_
+<java.net.URL: java.io.InputStream openStream()> -> _SINK_
+<java.net.URL: java.lang.Object getContent()> -> _SINK_
+<java.net.URL: java.lang.Object getContent(java.lang.Class[])> -> _SINK_
+<java.net.Socket: void connect(java.net.SocketAddress)> -> _SINK_
+<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)> -> _SINK_
+<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)> -> _SINK_
+

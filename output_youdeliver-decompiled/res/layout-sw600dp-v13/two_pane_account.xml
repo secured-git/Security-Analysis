@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/accountMainParrent" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/LeftPane" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.4" />
+    <FrameLayout android:id="@id/RightPane" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.6" />
+</LinearLayout>

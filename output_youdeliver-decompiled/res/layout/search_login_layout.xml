@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/LoginLayout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/text_red" android:id="@id/loginTV" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/loginTitle" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/emailLL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+                <TextView android:textColor="@color/takeaway_gray" android:gravity="center_vertical" android:background="@android:color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableLeft="@drawable/icon_email" />
+                <EditText android:id="@id/CustomerEmail" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/email_text" android:lines="1" android:drawableLeft="@drawable/icon_email" android:drawablePadding="7.0dip" android:inputType="textEmailAddress" />
+            </LinearLayout>
+            <ImageView android:id="@id/dividerHeader" android:background="@drawable/devider_restaurants_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_below="@id/emailLL" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <EditText android:id="@id/CustomerPassword" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/password_text" android:lines="1" android:drawableLeft="@drawable/password_icon" android:drawablePadding="7.0dip" android:inputType="textPassword" />
+            <ImageView android:background="@drawable/devider_restaurants_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_below="@id/emailLL" />
+        </LinearLayout>
+        <Button android:textSize="20.0dip" android:id="@id/SignInNowButton" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:text="@string/sign_up" style="@style/green_button" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <Button android:id="@id/LoginWithFbBtn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/foreground" android:layout_alignTop="@id/foreground" android:layout_alignRight="@id/foreground" android:layout_alignBottom="@id/foreground" style="@style/facebook_button" />
+            <RelativeLayout android:id="@id/foreground" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/fb_img" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fb_icon" />
+                    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/facebook_login" android:layout_toRightOf="@id/fb_img" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button android:textSize="12.0dip" android:id="@id/ForgotPasswordButton" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/forgot_password_button_text" style="@style/grey_button_forgot_pass" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/signUpLL" android:padding="0.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/sign_up_text_size" android:textStyle="bold" android:textColor="@color/forgot_pass_text_selector" android:id="@id/signUpButton" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register_button" />
+            <TextView android:textSize="@dimen/sign_up_link_text_size" android:textStyle="bold" android:textColor="@color/fb_blue_pressed" android:id="@id/signUpButton2" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/register_button2" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:droidfu="http://github.com/droidfu/schema">
+    <LinearLayout android:background="@color/bg_grey" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@drawable/shopping_cart_button_selector_tablet" android:id="@id/shoppingCartButton" android:background="@drawable/background_shopping_cart_tablet_button" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginRight="1.0dip" android:text="@string/shopping_cart_title" android:layout_weight="1.0" />
+        <Button android:textColor="@drawable/shopping_cart_button_selector_tablet" android:id="@id/restaurantReviewsButton" android:background="@drawable/background_shopping_cart_tablet_button" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:text="@string/reviews" android:layout_weight="1.0" />
+        <Button android:textColor="@drawable/shopping_cart_button_selector_tablet" android:id="@id/informationButton" android:background="@drawable/background_shopping_cart_tablet_button" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="1.0dip" android:text="@string/info_text" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/listButtonMargin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/shoppingCartLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/shoppingCartListView" android:background="@color/base_start_color_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/shoppingCartInformationLayout" />
+            <LinearLayout android:gravity="bottom" android:id="@id/shoppingCartInformationLayout" android:background="@color/cart_tablet_valid" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+                <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/text_grey" android:id="@id/minimOrderTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minimum_order_not_reached" />
+                    <Button android:id="@id/emptyShoppingCart" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_shopping_cart_text" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/black_button" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_prices" android:lines="1" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/text_grey" android:id="@id/order_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_values" android:lines="1" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/text_grey" android:id="@id/delivery_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delivery_cost" android:lines="1" />
+                    <TextView android:textColor="@color/text_grey" android:id="@id/ec_cost" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ec_payment" android:lines="1" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/text_grey" android:id="@id/voucher_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voucher_values" android:lines="1" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/text_grey" android:id="@id/stempel_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stempel_values_view" android:lines="1" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/text_grey" android:id="@id/rebate_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rebate_values_view" android:lines="1" />
+                    <Button android:id="@id/goToCheckout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkout_text" style="@style/black_button" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/DisableMask" android:background="#66dddddd" android:visibility="invisible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/reviewsLayout" android:background="@color/base_start_color_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/LoadingIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" />
+            <ListView android:id="@id/RestaurantRatingListView" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="6.0dip" style="@style/NoScrollBarList" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/infoLayout" android:background="@color/base_start_color_default" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/restaurant_info_tab" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

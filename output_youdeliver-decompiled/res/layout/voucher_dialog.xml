@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_primary_big_size" android:textStyle="bold" android:textColor="@color/text_grey" android:gravity="center_vertical" android:background="@drawable/background_view_rounded_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voucherHeader" android:drawableLeft="@drawable/ic_action_orders" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_view_rounded_bottom" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_grey" android:id="@id/VoucherMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voucherMsgDialog" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/text_grey" android:id="@id/VoucherValue" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/text_grey" android:id="@id/VoucherExpiration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voucherExpiration" android:layout_alignBottom="@id/VoucherValue" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/voucher_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <TextView android:textSize="24.0sp" android:gravity="center" android:id="@id/VoucherCode" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/text_grey" android:id="@id/VoucherInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/voucherFind" />
+    </LinearLayout>
+</LinearLayout>

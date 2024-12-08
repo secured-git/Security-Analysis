@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/leftLayout" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <com.yopeso.lieferando.view.CustomEditText android:textColor="#ff595959" android:gravity="center" android:id="@id/numbersOfMeals" android:background="@drawable/input" android:layout_width="44.0dip" android:layout_height="wrap_content" android:inputType="number" android:imeOptions="actionDone" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <LinearLayout android:gravity="center|left" android:id="@id/increaseButton" android:background="@drawable/plus_btn_selector" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/increaseNumberOfMealsButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/decreaseButton" android:background="@drawable/minus_btn_selector" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/decreaseNumberOfMeals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="–" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/decreaseButton1" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/decreaseNumberOfMealsButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete_btn_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/list_primary_text_size" android:textStyle="bold" android:textColor="#ff595959" android:id="@id/mealPrice" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10,00" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/mainCartLL" android:paddingLeft="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/mealPrice" android:layout_toRightOf="@id/leftLayout">
+        <TextView android:textSize="@dimen/list_primary_text_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/nameOfMeal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_grey" android:id="@id/descriptionMeal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" />
+        <TextView android:textSize="@dimen/list_primary_text_size" android:id="@id/PricePerUnit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_grey" android:id="@id/contentMeal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_grey" android:id="@id/commentMeal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textSize="@dimen/list_primary_text_size" android:id="@id/changeContentOfMeal" android:background="@drawable/edit_btn_selector" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_meal_text" />
+        <Button android:textSize="@dimen/list_primary_text_size" android:id="@id/changeComment" android:background="@drawable/edit_btn_selector" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_comment_no_additions" />
+        <TextView android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_red" android:id="@id/excludedFromMinCost" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/excluded_from_cost" />
+    </LinearLayout>
+    <ImageView android:id="@id/dividerHeader" android:background="@drawable/devider_restaurants_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/mainCartLL" />
+    <View android:background="@color/listButtonMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

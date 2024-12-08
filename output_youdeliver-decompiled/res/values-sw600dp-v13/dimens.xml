@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abs__action_bar_default_height">56.0dip</dimen>
+    <dimen name="abs__action_bar_icon_vertical_padding">4.0dip</dimen>
+    <dimen name="abs__action_bar_title_text_size">18.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_text_size">14.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_top_margin">-3.0dip</dimen>
+    <dimen name="abs__action_bar_subtitle_bottom_margin">9.0dip</dimen>
+    <dimen name="abs__action_button_min_width">64.0dip</dimen>
+    <dimen name="rest_logo_width">174.0dip</dimen>
+    <dimen name="rest_logo_height">119.0dip</dimen>
+    <dimen name="tab_text_size">12.0dip</dimen>
+    <dimen name="rate_now_text_size">16.0dip</dimen>
+    <dimen name="rating_order_star">55.0dip</dimen>
+    <dimen name="dividerHeight">2.0dip</dimen>
+    <dimen name="meal_item_selected_layout_widht">650.0dip</dimen>
+    <dimen name="top_margin_rest_item">7.0dip</dimen>
+    <dimen name="top_margin_adress_map">250.0dip</dimen>
+    <dimen name="scroll_view_hight">323.0dip</dimen>
+    <dimen name="new_lable_top">4.0dip</dimen>
+    <dimen name="stamps_corner_angle">10.0dip</dimen>
+    <dimen name="stamps_padding">1.0dip</dimen>
+    <dimen name="stamps_stroke">1.0px</dimen>
+    <dimen name="top_margin_rest_item_last">7.0dip</dimen>
+    <dimen name="info_tab_logo">80.0dip</dimen>
+    <dimen name="oreder_list_item_padding_top">3.0dip</dimen>
+    <dimen name="oreder_list_item_padding_left">1.0dip</dimen>
+    <dimen name="order_list_item_logo_width">90.0dip</dimen>
+    <dimen name="order_list_item_logo_height">60.0dip</dimen>
+    <dimen name="order_list_item_text_size_1">14.0dip</dimen>
+    <dimen name="order_list_item_text_size_2">10.0dip</dimen>
+</resources>

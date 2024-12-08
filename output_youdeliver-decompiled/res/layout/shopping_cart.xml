@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/CartHeader" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@id/CartBackground" android:background="@color/cart_invalid_bg" android:padding="@dimen/cart_background_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/CartText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minimum_order_not_reached" android:lines="2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/CartText" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <Button android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/CartButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cart_cost_details" android:lines="2" style="@style/green_button" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/outerSortingRL" android:background="@color/sorting_background_opaque" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/InnerSortingRL" android:background="@drawable/sorting_bg" android:layout_width="300.0dip" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/Header" android:background="@drawable/sorting_header_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/list_primary_text_size" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sort_by" />
+                    </LinearLayout>
+                    <RadioButton android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/lieferservice_sorting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/sort_by_lieferservice" />
+                    <ImageView android:id="@id/dividerHeader" android:background="@drawable/devider_restaurants_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/HeaderPayment" />
+                    <RadioButton android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/az_sorting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_az" />
+                    <ImageView android:background="@drawable/devider_restaurants_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/HeaderPayment" />
+                    <RadioButton android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/za_sorting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_za" />
+                    <ImageView android:background="@drawable/devider_restaurants_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/HeaderPayment" />
+                    <RadioButton android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/reviews" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_ratings" />
+                    <ImageView android:background="@drawable/devider_restaurants_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/HeaderPayment" />
+                    <RadioButton android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/delivery_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_delivery_cost" />
+                    <ImageView android:background="@drawable/devider_restaurants_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/HeaderPayment" />
+                    <RadioButton android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/minorder_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_min_order" />
+                    <ImageView android:background="@drawable/devider_restaurants_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/HeaderPayment" />
+                    <RadioButton android:textSize="@dimen/list_primary_text_size" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_distance" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

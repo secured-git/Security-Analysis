@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/filter_dialog_text_color" android:id="@id/SortByName" android:background="@drawable/filter_dialog_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_name" />
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/filter_dialog_text_color" android:id="@id/SortByNumberOfRetings" android:background="@drawable/filter_dialog_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_reviews" />
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/filter_dialog_text_color" android:id="@id/SortByRatings" android:background="@drawable/filter_dialog_selector" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sort_by_ratings" />
+    <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ToggleButton android:layout_gravity="center_vertical" android:id="@id/OnlyOpenedCheckBox" android:background="@drawable/btn_toggle_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:textOn="" android:textOff="" />
+        <TextView android:textColor="@color/filter_dialog_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_only_opened" />
+    </LinearLayout>
+    <LinearLayout android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ToggleButton android:layout_gravity="center_vertical" android:id="@id/OnlyOnlineCheckBox" android:background="@drawable/btn_toggle_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:textOn="" android:textOff="" />
+        <TextView android:textColor="@color/filter_dialog_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_only_online" />
+    </LinearLayout>
+</LinearLayout>

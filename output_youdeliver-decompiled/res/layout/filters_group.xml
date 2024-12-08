@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/filter_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:filter_widget="http://schemas.android.com/apk/res-auto">
+    <com.yopeso.lieferando.widget.FiltersWidget android:id="@id/minOrderBar" android:layout_width="fill_parent" android:layout_height="wrap_content" filter_widget:filterImage="@drawable/icon_euro_filter" filter_widget:filterTitle="@string/filterMinCost" />
+    <com.yopeso.lieferando.widget.FiltersWidget android:id="@id/deliveryCostBar" android:layout_width="fill_parent" android:layout_height="wrap_content" filter_widget:filterImage="@drawable/icon_car_filter" filter_widget:filterTitle="@string/filterDeliveryCost" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:textSize="@dimen/list_primary_text_size" android:ellipsize="end" android:id="@id/alphabetic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_alphabetically" style="@style/RadioButton" />
+        <CheckBox android:textSize="@dimen/list_primary_text_size" android:ellipsize="end" android:id="@id/rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_reviews" style="@style/RadioButton" />
+        <CheckBox android:textSize="@dimen/list_primary_text_size" android:ellipsize="end" android:id="@id/reviews" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_ratings" style="@style/RadioButton" />
+        <CheckBox android:textSize="@dimen/list_primary_text_size" android:ellipsize="end" android:id="@id/distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by_distance" style="@style/RadioButton" />
+        <CheckBox android:textSize="@dimen/list_primary_text_size" android:ellipsize="end" android:id="@id/newCustomer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newcustomer_rebate_dialog" style="@style/RadioButton" />
+        <CheckBox android:textSize="@dimen/list_primary_text_size" android:ellipsize="end" android:id="@id/rebate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discount" style="@style/RadioButton" />
+        <CheckBox android:textSize="@dimen/list_primary_text_size" android:ellipsize="end" android:id="@id/stampCard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stempel_cards" style="@style/RadioButton" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/newCustomerLL" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ToggleButton android:layout_gravity="center_vertical" android:id="@id/newCustomerCheckBox" android:background="@drawable/btn_toggle_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:textOn="" android:textOff="" />
+        <TextView android:layout_gravity="center" android:id="@id/filter_only_opened_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newcustomer_rebate_dialog" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/voucherLL" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ToggleButton android:layout_gravity="center_vertical" android:id="@id/voucherCheckBox" android:background="@drawable/btn_toggle_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:textOn="" android:textOff="" />
+        <TextView android:layout_gravity="center" android:id="@id/filter_only_opened_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discount" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ToggleButton android:layout_gravity="center_vertical" android:id="@id/OnlyOpenedCheckBox" android:background="@drawable/btn_toggle_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:textOn="" android:textOff="" />
+        <TextView android:layout_gravity="center" android:id="@id/filter_only_opened_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_only_opened" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ToggleButton android:layout_gravity="center_vertical" android:id="@id/OnlyOnlineCheckBox" android:background="@drawable/btn_toggle_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:textOn="" android:textOff="" />
+        <TextView android:layout_gravity="center" android:id="@id/filter_only_online_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_only_online" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ToggleButton android:layout_gravity="center_vertical" android:id="@id/StampelCheckBox" android:background="@drawable/btn_toggle_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:textOn="" android:textOff="" />
+        <TextView android:layout_gravity="center" android:id="@id/filter_only_stample_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_stampel" />
+    </LinearLayout>
+    <Button android:textColor="@color/text_grey" android:id="@id/resetFilter" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_enabled" style="?android:attr/buttonStyleSmall" />
+</LinearLayout>

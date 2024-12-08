@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:droidfu="http://github.com/droidfu/schema">
+    <LinearLayout android:id="@id/LL" android:paddingLeft="@dimen/oreder_list_item_padding_left" android:paddingTop="@dimen/oreder_list_item_padding_top" android:paddingRight="@dimen/oreder_list_item_padding_left" android:paddingBottom="@dimen/oreder_list_item_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/RestaurantLogo" android:paddingTop="1.0dip" android:paddingBottom="4.0dip" android:layout_width="@dimen/order_list_item_logo_width" android:layout_height="@dimen/order_list_item_logo_height" android:layout_marginRight="1.0dip" android:src="@drawable/ic_launcher" android:scaleType="fitXY" style="@style/RestaurantLogo" />
+            <include android:id="@id/newLabel" android:visibility="gone" layout="@layout/new_label" />
+            <ImageView android:id="@id/NewRestaurant" android:paddingLeft="3.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_label" android:layout_alignBottom="@id/RestaurantLogo" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.yopeso.lieferando.view.EllipsizingTextView android:textSize="@dimen/order_list_item_text_size_1" android:textStyle="bold" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/RestaurantName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+            <TextView android:textSize="@dimen/order_list_item_text_size_2" android:textColor="@color/text_grey" android:id="@id/OrderDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="-20.0dip" android:lines="1" android:drawableLeft="@drawable/icon_grey_watch" />
+            <TextView android:textSize="@dimen/order_list_item_text_size_2" android:textColor="@color/text_grey" android:id="@id/OrderCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_shopping" />
+            <TextView android:textSize="@dimen/order_list_item_text_size_2" android:textColor="@color/text_grey" android:id="@id/RestaurantPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_phone" />
+            <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/text_grey" android:id="@id/RatedStatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow" android:scaleType="centerInside" />
+    </LinearLayout>
+    <ImageView android:id="@id/dividerHeader" android:background="@drawable/devider_restaurants_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/LL" android:layerType="software" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/addNewAddressRB" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/address_save_toggle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/CityLL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <com.yopeso.lieferando.view.CustomAutoCompleteTextView android:enabled="true" android:id="@id/AddressCity" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/searchCity" android:lines="1" android:inputType="textCapSentences" style="@style/PaddingLRLightText" />
+        <View style="@style/Divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/StreetLL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <com.yopeso.lieferando.view.CustomAutoCompleteTextView android:enabled="true" android:id="@id/AddressStreet" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/searchStreet" android:lines="1" android:inputType="textCapSentences" style="@style/PaddingLRLightText" />
+        <View style="@style/Divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/HouseLL" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <com.yopeso.lieferando.view.CustomAutoCompleteTextView android:enabled="true" android:id="@id/AddressHauseNr" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/searchNumber" android:lines="1" android:inputType="textCapSentences" style="@style/PaddingLRLightText" />
+        <View style="@style/Divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/myAddressesLL" android:background="#ff5b5b5b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/main_address" />
+    </LinearLayout>
+    <ListView android:id="@id/UserDeliveryArea" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:cacheColorHint="#00000000" android:footerDividersEnabled="true" />
+</LinearLayout>

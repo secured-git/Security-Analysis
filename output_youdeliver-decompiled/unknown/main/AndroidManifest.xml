@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionCode="128" android:versionName="3.6.0" package="com.yourdelivery.pyszne">
+
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="21"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<!--     <uses-permission android:name="android.permission.READ_PHONE_STATE"/> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.yourdelivery.pyszne.permission.MAPS_RECEIVE"/>
+<!--     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/> -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    
+     <!-- KAHUNA permissions -->
+    <permission android:name="com.yourdelivery.pyszne.permission.C2D_MESSAGE" android:protectionLevel="signature"/> 
+    <uses-permission android:name="com.yourdelivery.pyszne.permission.C2D_MESSAGE"/> 
+    
+    
+ <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+    
+    <!-- App receives GCM messages. --> 
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/> 
+    <!-- GCM requires a Google account. --> 
+   <!--  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>  -->
+
+    <!-- END of permissions required for KAHUNA Push -->
+    
+
+    <permission android:name="com.yourdelivery.pyszne.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+
+    <application android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.yopeso.lieferando.LieferandoApplicationPl" android:theme="@style/LiferandoTheme">
+        <uses-library android:name="com.google.android.maps" android:required="false"/>
+
+        <activity android:name="net.hockeyapp.android.UpdateActivity"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="orientation" android:label="@string/app_name" android:name="com.yopeso.lieferando.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            
+             <intent-filter>
+				<data android:scheme="pyszne-pl" />
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+		   </intent-filter>
+            
+             
+                <intent-filter android:label="@string/app_name">
+         <action android:name="android.intent.action.VIEW" />
+         <category android:name="android.intent.category.DEFAULT" />
+         <category android:name="android.intent.category.BROWSABLE" />
+         <!-- Accepts URIs that begin with "pyszne-pl://restaurant" -->         
+         <data android:scheme="pyszne-pl"
+               android:host="restaurant" />
+     </intent-filter>
+            
+        </activity>
+        <service android:exported="false" android:name="com.yopeso.lieferando.service.SyncUserService"/>
+        
+        <activity android:launchMode="singleTask" android:name="com.yopeso.lieferando.activity.SearchActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.yopeso.lieferando.activity.AccountActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity"/>
+        <!-- //TODO: important - change here application id -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
+        <activity android:name="com.yopeso.lieferando.activity.PaymentActivity">
+        </activity>
+        <activity android:configChanges="screenLayout|screenSize" android:name="com.yopeso.lieferando.activity.tablet.SearchActivity" android:screenOrientation="landscape" android:launchMode="singleTask" android:theme="@style/LieferandoTabletTheme" android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name="com.yopeso.lieferando.activity.PushActivity">
+        </activity>
+        <activity android:name="com.yopeso.lieferando.activity.tablet.AccountActivity" android:screenOrientation="landscape" android:theme="@style/LieferandoTabletTheme">
+        </activity>
+        <activity android:name="com.yopeso.lieferando.activity.tablet.InformationActivity" android:theme="@style/LieferandoTabletTheme">
+        </activity>
+        <activity android:name="com.yopeso.lieferando.activity.tablet.RegistrationActivity" android:theme="@style/LiferandoTheme" android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name="com.yopeso.lieferando.activity.RestaurantInfoActivity" android:screenOrientation="portrait">
+        </activity>
+        <!-- Widget Provider -->
+        <receiver android:enabled="@bool/widget_enabled" android:label="@string/main_address" android:name="com.yopeso.lieferando.widget.AddressesWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.yopeso.lieferando.widget.UPDATE_ADDRESSES"/>
+            </intent-filter>
+
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/addresses_appwidget_info"/>
+        </receiver>
+        
+       
+        <service android:name="com.yopeso.lieferando.widget.AddressWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/support_map_fragment_key"/>
+		
+       <!--  <service android:name="com.parse.PushService"/>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver> -->
+        <receiver android:name="com.yopeso.lieferando.net.push.PushReceiver">
+            <intent-filter>
+                <action android:name="com.yopeso.lieferando.NEW_REST"/>
+                <action android:name="com.yopeso.lieferando.VOUCHER"/>
+                <action android:name="com.yopeso.lieferando.WEBAD"/>
+            </intent-filter>
+        </receiver>
+         <receiver  android:name="com.adjust.sdk.AdjustReferrerReceiver"
+    android:exported="true" >
+    <intent-filter>
+        <action android:name="com.android.vending.INSTALL_REFERRER" />
+    </intent-filter>
+</receiver>
+
+      <!--   <meta-data android:name="AdjustAppToken" android:value="xlyyj5rc2wth"/>
+        <meta-data android:name="AdjustLogLevel" android:value="info"/>
+        <meta-data android:name="AdjustEnvironment" android:value="production"/> -->
+        
+        
+         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/> 
+         
+          <!-- special Pyszne APK as a pre-install on Lenovo Tablets -->
+        <!--  <meta-data android:name="AdjustDefaultTracker" android:value="ryt86u" /> -->
+         
+         <!-- KAHUNA: Kahuna's push requires the receivers and service --> 
+        <receiver android:name="com.kahuna.sdk.KahunaCoreReceiver"/> 
+        <receiver android:name="com.kahuna.sdk.KahunaPushReceiver" android:permission="com.google.android.c2dm.permission.SEND"> 
+            <intent-filter> 
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/> 
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/> 
+
+                <category android:name="com.yourdelivery.pyszne"/> 
+            </intent-filter> 
+        </receiver> 
+
+        <service android:name="com.kahuna.sdk.KahunaPushService"/> 
+        <!-- END of Kahuna's push requirements --> 
+         <!-- Appsee  -->
+			<service android:name="com.appsee.AppseeBackgroundUploader"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="restaurant_filters_array">
+        <item>Japanese</item>
+        <item>Poland</item>
+        <item>Italian</item>
+        <item>Chinese</item>
+        <item>Vietnamese</item>
+        <item>Greek</item>
+        <item>Asian</item>
+        <item>International</item>
+        <item>German</item>
+        <item>Indian</item>
+        <item>Turkish</item>
+        <item>Arab</item>
+        <item>Vegetarian</item>
+        <item>Home</item>
+        <item>Homemade Cakes</item>
+        <item>Mexican</item>
+        <item>American</item>
+        <item>Russian</item>
+        <item>sandwiches</item>
+        <item>Thai</item>
+        <item>Oriental</item>
+        <item>Other</item>
+        <item>Catering</item>
+        <item>French</item>
+        <item>Spanish</item>
+        <item>Diet</item>
+    </string-array>
+    <string-array name="restaurant_filters_array_static">
+        <item>Japońska</item>
+        <item>Polska</item>
+        <item>Włoska</item>
+        <item>Chińska</item>
+        <item>Wietnamska</item>
+        <item>Grecka</item>
+        <item>Azjatycka</item>
+        <item>Międzynarodowa</item>
+        <item>Niemiecka</item>
+        <item>Indyjska</item>
+        <item>Turecka</item>
+        <item>Arabska</item>
+        <item>Wegetariańska</item>
+        <item>Domowa</item>
+        <item>Ciasta domowe</item>
+        <item>Meksykańska</item>
+        <item>Amerykańska</item>
+        <item>Rosyjska</item>
+        <item>Sandwicze</item>
+        <item>Tajska</item>
+        <item>Orientalna</item>
+        <item>Inne</item>
+        <item>Catering</item>
+        <item>Francuska</item>
+        <item>Hiszpańska</item>
+        <item>Dietetyczna</item>
+    </string-array>
+    <string-array name="drawler_titles_array">
+        <item>How Does It Work?</item>
+        <item>Help</item>
+        <item>Imprint</item>
+        <item>Rate App</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="restaurant_info_title_array">
+        <item>Reviews</item>
+        <item>Info</item>
+        <item>Map</item>
+    </string-array>
+    <string-array name="dropdown_title_array">
+        <item>Filter</item>
+        <item>Kitchen Type</item>
+        <item>Sorting</item>
+    </string-array>
+</resources>

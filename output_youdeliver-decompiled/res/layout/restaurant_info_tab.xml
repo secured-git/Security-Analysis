@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:droidfu="http://github.com/droidfu/schema">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/heart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/heart" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/rest_title_text_size" android:textStyle="bold" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/RestaurantName" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="TEST" android:lines="1" android:singleLine="true" android:layout_toRightOf="@id/heart" />
+    </RelativeLayout>
+    <LinearLayout android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/RestaurantLogo" android:layout_width="@dimen/rest_logo_width" android:layout_marginRight="1.0dip" android:src="@drawable/ic_launcher" style="@style/RestaurantLogo" />
+            <include android:id="@id/newLabel" android:visibility="gone" layout="@layout/new_label" />
+            <ImageView android:id="@id/NewRestaurant" android:paddingLeft="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_label" android:layout_alignBottom="@id/RestaurantLogo" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/rest_list_text_size" android:textColor="@color/text_green" android:id="@id/RestaurantDistance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+                <TextView android:textSize="@dimen/rest_list_text_size" android:textColor="@color/text_grey" android:id="@id/RestaurantDistanceDiv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="1.0dip" android:text="|" />
+                <TextView android:textSize="@dimen/rest_list_text_size" android:textColor="#ff5e6060" android:id="@id/RestaurantDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/tab_text_size" android:textColor="@color/text_grey" android:id="@id/MinimumOrder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:drawableLeft="@drawable/icon_shopping" />
+            <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/text_grey" android:id="@id/RestaurantSchedule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_green_watch" />
+            <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/text_grey" android:id="@id/DeliveryCost" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delivery_value" />
+            <LinearLayout android:id="@id/RestaurantRatingLine" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RatingBar android:layout_gravity="center_vertical" android:id="@id/RestaurantRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="3.0" android:isIndicator="true" style="@style/CustomRatingBar" />
+                <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/text_grey" android:id="@id/RestaurantRatingDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:lines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16.0dip" android:textColor="@color/text_grey" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paymentOptions" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:id="@id/CashPayments" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/cash" android:drawableLeft="@drawable/check_small" android:drawableRight="@drawable/payment_cash" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:id="@id/ECPayments" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/ec_payment" android:drawableLeft="@drawable/check_small" android:drawableRight="@drawable/ec_checkout" android:drawablePadding="3.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/CardPayments" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:gravity="center_vertical" android:id="@id/onlinePayment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_paymant" android:drawableLeft="@drawable/check_small" />
+        <ImageView android:id="@id/PaymentSofortblack" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:src="@drawable/sofort_small" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:src="@drawable/payment_mastercard" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:src="@drawable/payment_visa" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:src="@drawable/payment_amex" />
+        <ImageView android:id="@id/PaymentPayPal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/paypal_small" />
+        <ImageView android:id="@id/PaymentPayU" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:src="@drawable/payu_small" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/stempel_row" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stempel_cards" android:drawableLeft="@drawable/check_small" />
+        <LinearLayout android:gravity="center" android:id="@id/partner_rebate_layout" android:background="@drawable/dotted_blue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+            <TextView android:textSize="8.0dip" android:textColor="@color/stamp_text_blue" android:gravity="center" android:id="@id/PartnerRebate" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/lieferando_voucher_layout" android:background="@drawable/dotted_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+            <TextView android:textSize="8.0dip" android:textColor="@color/stamp_text_red" android:gravity="center" android:id="@id/LieferandoVoucher" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/stamp_layout" android:background="@drawable/dotted_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+            <TextView android:textSize="8.0dip" android:textColor="@color/stamp_text_orange" android:gravity="center" android:id="@id/StampCard" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stamp_not_logged_in" />
+        </LinearLayout>
+        <ImageView android:id="@id/clockIcon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/icon_watch" android:layout_toRightOf="@id/stamp_layout" android:layout_below="@id/stamp_layout" />
+        <LinearLayout android:gravity="center" android:id="@id/stamp_layout2" android:background="@drawable/dotted_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+            <TextView android:textSize="8.0dip" android:textColor="@color/stamp_text_orange" android:gravity="center" android:id="@id/StampCard2" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/stamp_not_logged_in" />
+        </LinearLayout>
+        <ImageView android:id="@id/clockIcon2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/icon_watch" android:layout_toRightOf="@id/stamp_layout2" android:layout_below="@id/stamp_layout2" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:gravity="center_vertical" android:id="@id/FreeDeliveryFor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/freeDeliveryFor" android:drawableLeft="@drawable/check_small" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_grey" android:id="@id/ShippingCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delivery_cost" android:drawableLeft="@drawable/check_small" />
+        <ImageView android:id="@id/SmsMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/sms_icon" />
+    </LinearLayout>
+    <fragment android:id="@id/map2" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gms.maps.SupportMapFragment" />
+</LinearLayout>

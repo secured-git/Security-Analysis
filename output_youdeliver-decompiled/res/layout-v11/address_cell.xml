@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="0.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/address_cell_bg" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip">
+        <LinearLayout android:id="@id/customerAddressLayout" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/AddresCellStyle">
+                <TextView android:textSize="@dimen/list_primary_text_size" android:textStyle="bold" android:textColor="#ff7d7d7d" android:id="@id/AddressName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="AddressName" />
+                <TextView android:textSize="@dimen/list_primary_text_size" android:textStyle="bold" android:textColor="#ff7d7d7d" android:id="@id/AddressCompany" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="AddressCompany" />
+                <TextView android:textSize="@dimen/list_primary_text_size" android:textStyle="bold" android:textColor="#ff7d7d7d" android:id="@id/AddressStreetAndNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="AddressStreetAndNumber" />
+                <TextView android:textSize="@dimen/list_primary_text_size" android:textColor="#ff7d7d7d" android:id="@id/AddressPostalcodeAndCity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="AddressPostalcodeAndCity" />
+                <TextView android:textSize="@dimen/list_primary_text_size" android:textColor="#ff7d7d7d" android:id="@id/AddressFloor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="AddressFloor" />
+                <TextView android:textSize="@dimen/list_primary_text_size" android:textColor="#ff7d7d7d" android:id="@id/AddressSpecialNote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="AddressSpecialNote" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="0.0">
+                <ImageView android:id="@id/arrowIW" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="50.0dip" android:src="@drawable/arrow" />
+                <ImageView android:id="@id/AddAsDefaultAddressButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/acc_address" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/EditDeleteBottomButtons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <ImageView android:id="@id/EditAddressIV" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_pen_edit" />
+            <ImageView android:id="@id/DeleteAddressIV" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_delete_address" android:layout_toRightOf="@id/EditAddressIV" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/AddressBottomButton" android:background="@drawable/button_green_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="@dimen/list_primary_text_size" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/orderNow" android:drawableLeft="@drawable/icon_order_here" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/dotted_line_list_view_devider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layerType="software" />
+</LinearLayout>

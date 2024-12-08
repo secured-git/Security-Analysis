@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="top_margin_search_long">73.0dip</dimen>
+    <dimen name="top_margin_search_initial">190.0dip</dimen>
+    <dimen name="top_margin_button_full">4.0dip</dimen>
+    <dimen name="search_field_margin">205.0dip</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/RelativeLayout1" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:id="@id/VoucherValue" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0dip" android:id="@id/VoucherCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/VoucherValue" />
+    <ImageView android:id="@id/clearButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/x" android:layout_alignParentRight="true" />
+    <TextView android:textSize="14.0dip" android:id="@id/VoucherExpiration" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/clearButton" android:layout_below="@id/VoucherValue" />
+</RelativeLayout>

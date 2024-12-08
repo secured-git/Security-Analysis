@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#bbffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center_vertical" android:background="#bbe7e7e7" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_address" android:drawableLeft="@drawable/ic_launcher" android:drawablePadding="4.0dip" />
+    <ImageView android:background="@color/listButtonMargin" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@id/widgetAddressesListView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/listButtonMargin" android:dividerHeight="1.0dip" />
+</LinearLayout>

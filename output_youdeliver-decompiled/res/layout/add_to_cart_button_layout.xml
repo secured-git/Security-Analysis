@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/AddToCartButtonRL" android:background="@drawable/button_green_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/AddToCartButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Add to cart sdfs dfs " android:layout_toLeftOf="@id/AddToCartButtonPrise" style="@style/green_button" />
+        <TextView android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/AddToCartButtonPrise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="50,99 €" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

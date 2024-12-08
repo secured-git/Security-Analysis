@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/date_time_picker_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_grey" android:gravity="center" android:id="@id/textView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/deliver_date_details" />
+            <DatePicker android:id="@id/DatePicker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/textView2" android:calendarViewShown="false" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_grey" android:gravity="center" android:id="@id/textView3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/provide_delivery_time" android:layout_below="@id/DatePicker" />
+            <Spinner android:textSize="@dimen/list_secondary_text_size" android:gravity="center_horizontal" android:id="@id/TimeSpinner" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:lines="1" android:layout_below="@id/textView3" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

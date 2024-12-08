@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/list_item_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:droidfu="http://github.com/droidfu/schema">
+    <LinearLayout android:id="@id/LL" android:paddingLeft="@dimen/oreder_list_item_padding_left" android:paddingTop="@dimen/oreder_list_item_padding_top" android:paddingRight="@dimen/oreder_list_item_padding_left" android:paddingBottom="@dimen/oreder_list_item_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/order_list_item_text_size_1" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/userName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="-20.0dip" android:lines="1" />
+            <com.yopeso.lieferando.view.EllipsizingTextView android:textSize="@dimen/order_list_item_text_size_1" android:textColor="@color/text_grey" android:ellipsize="end" android:id="@id/streetNameAndNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+            <TextView android:textSize="@dimen/order_list_item_text_size_1" android:textColor="@color/text_grey" android:id="@id/cityName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="-20.0dip" android:lines="1" />
+            <TextView android:textSize="@dimen/order_list_item_text_size_1" android:textColor="@color/text_grey" android:id="@id/postCode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/order_list_item_text_size_1" android:textColor="@color/text_grey" android:id="@id/company" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/order_list_item_text_size_1" android:textColor="@color/text_grey" android:id="@id/floor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow" android:scaleType="centerInside" />
+    </LinearLayout>
+    <ImageView android:id="@id/dividerHeader" android:background="@drawable/devider_restaurants_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/LL" android:layerType="software" />
+</RelativeLayout>

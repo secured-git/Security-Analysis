@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/text_grey" android:gravity="left" android:id="@id/MenuName" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow" />
+    <ImageView android:id="@id/dividerBottom" android:background="@drawable/devider_restaurants_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layerType="software" />
+</LinearLayout>

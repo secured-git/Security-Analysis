@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/FocusGat" android:focusable="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <ImageView android:id="@id/MenuHeader" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/RestMenuHeader" android:background="@color/gray_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/list_title_text_size" android:textStyle="bold" android:textColor="@color/text_white_headers" android:id="@id/MenuName" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_label" />
+        <TextView android:textSize="@dimen/list_title_text_size" android:textColor="@color/text_white_headers" android:id="@id/MenuDescription" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="asdasd asd asda sdas dasd as dsad sad sad as dsad" android:layout_below="@id/MenuName" />
+        <ProgressBar android:id="@id/LoadingMenuProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+    </RelativeLayout>
+    <ListView android:id="@id/MenuListView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/AdditivesRL" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/list_title_text_size" android:textStyle="bold" android:textColor="@color/gray_bg" android:id="@id/title" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/additives_text1" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/list_title_text_size" android:textStyle="bold" android:textColor="@color/text_grey" android:id="@id/info" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/additives_text2" android:layout_below="@id/title" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <include android:id="@id/ShoppingCart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-2.0dip" android:layout_marginTop="-12.0dip" android:layout_marginRight="-2.0dip" android:layout_weight="0.0" layout="@layout/shopping_cart" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/list_block_top" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center" android:id="@id/HeaderPoints" android:background="@drawable/input" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center|left" android:id="@id/HeaderTitle" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_ice" android:layout_toLeftOf="@id/HeaderPoints" android:layout_alignTop="@id/HeaderPoints" android:layout_alignBottom="@id/HeaderPoints" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

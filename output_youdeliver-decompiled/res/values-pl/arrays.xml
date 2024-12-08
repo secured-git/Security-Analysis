@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="restaurant_filters_array">
+        <item>Japońska</item>
+        <item>Polska</item>
+        <item>Włoska</item>
+        <item>Chińska</item>
+        <item>Wietnamska</item>
+        <item>Grecka</item>
+        <item>Azjatycka</item>
+        <item>Międzynarodowa</item>
+        <item>Niemiecka</item>
+        <item>Indyjska</item>
+        <item>Turecka</item>
+        <item>Arabska</item>
+        <item>Wegetariańska</item>
+        <item>Domowa</item>
+        <item>Ciasta domowe</item>
+        <item>Meksykańska</item>
+        <item>Amerykańska</item>
+        <item>Rosyjska</item>
+        <item>Sandwicze</item>
+        <item>Tajska</item>
+        <item>Orientalna</item>
+        <item>Inne</item>
+        <item>Catering</item>
+        <item>Francuska</item>
+        <item>Hiszpańska</item>
+        <item>Dietetyczna</item>
+    </string-array>
+    <string-array name="restaurant_filters_array_static">
+        <item>Japońska</item>
+        <item>Polska</item>
+        <item>Włoska</item>
+        <item>Chińska</item>
+        <item>Wietnamska</item>
+        <item>Grecka</item>
+        <item>Azjatycka</item>
+        <item>Międzynarodowa</item>
+        <item>Niemiecka</item>
+        <item>Indyjska</item>
+        <item>Turecka</item>
+        <item>Arabska</item>
+        <item>Wegetariańska</item>
+        <item>Domowa</item>
+        <item>Ciasta domowe</item>
+        <item>Meksykańska</item>
+        <item>Amerykańska</item>
+        <item>Rosyjska</item>
+        <item>Sandwicze</item>
+        <item>Tajska</item>
+        <item>Orientalna</item>
+        <item>Inne</item>
+        <item>Catering</item>
+        <item>Francuska</item>
+        <item>Hiszpańska</item>
+        <item>Dietetyczna</item>
+    </string-array>
+    <string-array name="drawler_titles_array">
+        <item>Jak działa Pyszne.pl?</item>
+        <item>Pomoc</item>
+        <item>Informacja prawna</item>
+        <item>Oceń aplikację</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Mężczyzna</item>
+        <item>Kobieta</item>
+    </string-array>
+    <string-array name="restaurant_info_title_array">
+        <item>Opinie</item>
+        <item>Info</item>
+        <item>Mapa</item>
+    </string-array>
+    <string-array name="dropdown_title_array">
+        <item>Filtry</item>
+        <item>Kuchnia</item>
+        <item>Sortuj</item>
+    </string-array>
+</resources>

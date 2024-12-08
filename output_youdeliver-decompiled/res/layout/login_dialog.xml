@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/EmailInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/emailHint" android:ems="10" android:inputType="textEmailAddress">
+        <requestFocus />
+    </EditText>
+    <EditText android:id="@id/PasswordInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/passwordHint" android:ems="10" android:inputType="textPassword" />
+    <Button android:textStyle="bold" android:gravity="center_vertical" android:id="@id/LoginWithFbBtn" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="@string/facebook_login" android:drawableLeft="@drawable/fb_icon" style="@style/facebook_button" />
+</LinearLayout>

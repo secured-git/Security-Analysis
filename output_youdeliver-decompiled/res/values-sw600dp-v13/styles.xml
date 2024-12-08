@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ParentTheme" parent="@style/Theme.Sherlock.Light">
+        <item name="android:itemTextAppearance">@style/MyTextAppearance</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+    <style name="LiferandoTheme" parent="@style/ParentTheme">
+        <item name="android:buttonStyle">@style/WhiteTextButton</item>
+        <item name="android:buttonStyleToggle">@style/WhiteToggleButton</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:listViewStyle">@style/NoScrollBarList</item>
+        <item name="android:ratingBarStyle">@style/CustomRatingBar</item>
+        <item name="android:scrollViewStyle">@style/NoScrollBarView</item>
+        <item name="android:textViewStyle">@style/BlackText</item>
+        <item name="android:actionBarStyle">@style/LieferandoActionBarTheme</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:actionMenuTextAppearance">@style/MyTextAppearance</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_pressed_item_bg</item>
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+        <item name="actionBarStyle">@style/LieferandoActionBarTheme</item>
+        <item name="actionBarItemBackground">@drawable/actionbar_pressed_item_bg</item>
+        <item name="actionMenuTextAppearance">@style/MyTextAppearance</item>
+        <item name="searchAutoCompleteTextView">@style/searchTextView</item>
+        <item name="searchViewSearchIcon">@drawable/ic_action_search</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+    </style>
+    <style name="LieferandoTabletTheme" parent="@style/ParentTheme">
+        <item name="android:buttonStyle">@style/WhiteTextButton</item>
+        <item name="android:buttonStyleToggle">@style/WhiteToggleButton</item>
+        <item name="android:listViewStyle">@style/NoScrollBarList</item>
+        <item name="android:ratingBarStyle">@style/CustomRatingBar</item>
+        <item name="android:scrollViewStyle">@style/NoScrollBarView</item>
+        <item name="android:textViewStyle">@style/BlackText</item>
+        <item name="android:actionBarStyle">@style/LieferandoActionBarTheme</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:actionMenuTextAppearance">@style/MyTextAppearance</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_pressed_item_bg</item>
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+        <item name="actionBarStyle">@style/LieferandoActionBarTheme</item>
+        <item name="actionBarItemBackground">@drawable/actionbar_pressed_item_bg</item>
+        <item name="actionMenuTextAppearance">@style/MyTextAppearance</item>
+        <item name="searchAutoCompleteTextView">@style/searchTextView</item>
+        <item name="searchViewSearchIcon">@drawable/ic_action_search</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+    </style>
+    <style name="NoScrollBarView" parent="@android:style/Widget.ScrollView">
+        <item name="android:scrollbars">none</item>
+    </style>
+    <style name="NoScrollBarList" parent="@android:style/Widget.ListView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@color/listButtonMargin</item>
+        <item name="android:dividerHeight">1.0dip</item>
+    </style>
+    <style name="WhiteTextButton" parent="@android:style/Widget.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="WhiteToggleButton" parent="@android:style/Widget.Button.Toggle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">6.0dip</item>
+    </style>
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">40.0dip</item>
+        <item name="android:progressDrawable">@drawable/star_rating_bar</item>
+        <item name="android:minHeight">14.0dip</item>
+        <item name="android:stepSize">0.2</item>
+    </style>
+    <style name="BlackText" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/list_primary_text_size</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="PaddingLRText">
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+    </style>
+    <style name="PaddingLRLightText" parent="@style/PaddingLRText">
+        <item name="android:textSize">@dimen/text_register_account_size</item>
+        <item name="android:textColor">@color/text_register_account</item>
+    </style>
+    <style name="general_button">
+        <item name="android:textSize">@dimen/general_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="general_address_button">
+        <item name="android:textSize">@dimen/general_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">7.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">7.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+    </style>
+    <style name="green_button" parent="@style/general_button">
+        <item name="android:background">@drawable/button_green_selector</item>
+    </style>
+    <style name="red_address_button" parent="@style/general_address_button">
+        <item name="android:background">@drawable/button_address_red_selector</item>
+    </style>
+    <style name="grey_button" parent="@style/general_button">
+        <item name="android:textColor">@color/text_color_selector</item>
+        <item name="android:background">@drawable/button_grey_selector_pl</item>
+    </style>
+    <style name="black_button" parent="@style/general_button">
+        <item name="android:background">@drawable/button_black_selector</item>
+    </style>
+    <style name="facebook_button" parent="@style/general_button">
+        <item name="android:background">@drawable/button_blue_selector</item>
+    </style>
+    <style name="list_button">
+        <item name="android:textSize">@dimen/list_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color_selector</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@drawable/background_view_rounded_middle</item>
+        <item name="android:padding">3.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+        <item name="android:drawableRight">@drawable/chevron_default</item>
+    </style>
+    <style name="list_button_top" parent="@style/list_button">
+        <item name="android:background">@drawable/background_view_rounded_top</item>
+    </style>
+    <style name="list_button_bottom" parent="@style/list_button">
+        <item name="android:background">@drawable/background_view_rounded_bottom</item>
+    </style>
+    <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/radio_button_selector</item>
+    </style>
+    <style name="RestaurantLogo">
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">@dimen/rest_logo_width</item>
+        <item name="android:layout_height">@dimen/rest_logo_height</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="MealLogo">
+        <item name="android:paddingLeft">1.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">1.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_width">@dimen/meal_logo_width</item>
+        <item name="android:layout_height">@dimen/meal_logo_height</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="ReviewProgress" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:progressDrawable">@drawable/custom_progress_bar</item>
+    </style>
+    <style name="CustomLinePageIndicator">
+        <item name="selectedColor">#ff880000</item>
+        <item name="strokeWidth">4.0dip</item>
+        <item name="unselectedColor">#ff888888</item>
+        <item name="lineWidth">30.0dip</item>
+    </style>
+    <style name="CustomTabPageIndicator.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:typeface">normal</item>
+    </style>
+    <style name="CustomTitlePageIndicator">
+        <item name="android:textColor">#aa000000</item>
+        <item name="android:background">#18ff0000</item>
+        <item name="selectedColor">#ff000000</item>
+        <item name="footerColor">#ffaa2222</item>
+        <item name="footerLineHeight">1.0dip</item>
+        <item name="footerIndicatorStyle">underline</item>
+        <item name="footerIndicatorHeight">3.0dip</item>
+        <item name="selectedBold">true</item>
+    </style>
+    <style name="CustomUnderlinePageIndicator">
+        <item name="android:background">#ffcccccc</item>
+        <item name="selectedColor">#ffcc0000</item>
+        <item name="fadeDelay">1000</item>
+        <item name="fadeLength">1000</item>
+    </style>
+    <style name="CustomTabPageIndicator" parent="@style/Widget.TabPageIndicator">
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff555555</item>
+        <item name="android:background">@drawable/custom_tab_indicator</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8.0dip</item>
+        <item name="android:divider">@null</item>
+        <item name="android:showDividers">none</item>
+    </style>
+    <style name="LieferandoActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:icon">@drawable/actionbar_icon</item>
+        <item name="android:background">@color/actionbar_red</item>
+        <item name="android:displayOptions">showHome</item>
+        <item name="android:titleTextStyle">@style/MyTextAppearanceActionBar</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_pressed_item_bg</item>
+        <item name="background">@color/actionbar_red</item>
+        <item name="actionBarItemBackground">@drawable/actionbar_pressed_item_bg</item>
+        <item name="displayOptions">showHome</item>
+        <item name="icon">@drawable/actionbar_icon</item>
+    </style>
+    <style name="MyTextAppearanceActionBar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="MyPopupMenu" parent="@style/Widget.Sherlock.ListPopupWindow">
+        <item name="android:popupBackground">@color/menu_bg</item>
+    </style>
+    <style name="MyTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="AccountTextViewStyle">
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">140.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="AddresCellStyle">
+        <item name="android:padding">5.0dip</item>
+    </style>
+    <style name="DropDownItem" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textAppearance">@style/MyTextAppearance</item>
+    </style>
+    <style name="SpinnerItem" parent="@android:style/Widget.Holo.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/MyTextAppearance</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu.MyLarge" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu.MySmall" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="searchTextView" parent="@style/Widget.Sherlock.SearchAutoCompleteTextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/text_grey</item>
+    </style>
+    <style name="grey_button_forgot_pass" parent="@style/general_button">
+        <item name="android:textColor">@color/forgot_pass_text_selector</item>
+        <item name="android:background">@drawable/button_apply_bg_selector</item>
+    </style>
+</resources>

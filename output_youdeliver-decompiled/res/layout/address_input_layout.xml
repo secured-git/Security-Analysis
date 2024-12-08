@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/AddressInputLayout" android:background="@android:color/white" android:paddingBottom="90.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/abs__search_plate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textColor="@color/text_grey" android:gravity="center_vertical" android:layout_width="140.0dip" android:layout_height="fill_parent" android:text="@string/deliver_firstname" style="@style/PaddingLRText" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/AddressName" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="50" android:inputType="textCapSentences" style="@style/PaddingLRLightText" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_grey" android:gravity="center_vertical" android:layout_width="140.0dip" android:layout_height="fill_parent" android:text="@string/deliver_lastname" style="@style/PaddingLRText" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/AddressLastName" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="50" android:inputType="textCapSentences" style="@style/PaddingLRLightText" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_grey" android:gravity="center_vertical" android:layout_width="140.0dip" android:layout_height="fill_parent" android:text="@string/addressCity" style="@style/PaddingLRText" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yopeso.lieferando.view.CustomAutoCompleteTextView android:id="@id/AddressCity" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:inputType="textCapSentences" android:imeOptions="actionGo" style="@style/PaddingLRLightText" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_grey" android:gravity="center_vertical" android:layout_width="140.0dip" android:layout_height="fill_parent" android:text="@string/addressStreet" style="@style/PaddingLRText" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yopeso.lieferando.view.CustomAutoCompleteTextView android:id="@id/AddressStreet" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="50" android:inputType="textCapSentences" android:imeOptions="actionGo" style="@style/PaddingLRLightText" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_grey" android:gravity="center_vertical" android:layout_width="140.0dip" android:layout_height="fill_parent" android:text="@string/addressHauseNr" style="@style/PaddingLRText" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yopeso.lieferando.view.CustomAutoCompleteTextView android:id="@id/AddressHauseNr" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="10" android:inputType="textCapSentences" android:imeOptions="actionGo" style="@style/PaddingLRLightText" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/plzLL" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_vertical" android:background="@drawable/text_field_mid" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/addressZipCode" style="@style/PaddingLRText" />
+        <EditText android:enabled="false" android:id="@id/AddressZipCode" android:background="@drawable/edit_text_mid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" style="@style/PaddingLRLightText" />
+    </LinearLayout>
+    <EditText android:id="@id/EmailAddr" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="50" android:inputType="textEmailAddress" style="@style/PaddingLRLightText" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_grey" android:gravity="center_vertical" android:layout_width="140.0dip" android:layout_height="fill_parent" android:text="@string/deliver_phone" style="@style/PaddingLRText" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/PhoneNumber" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="@integer/phone_length" android:inputType="number" style="@style/PaddingLRLightText" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_grey" android:gravity="center_vertical" android:layout_width="140.0dip" android:layout_height="fill_parent" android:text="@string/addressCompany" style="@style/PaddingLRText" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/AddressCompany" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="255" android:inputType="textCapSentences" style="@style/PaddingLRLightText" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/text_grey" android:gravity="center_vertical" android:layout_width="140.0dip" android:layout_height="fill_parent" android:text="@string/addressFloor" style="@style/PaddingLRText" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/AddressFloor" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:inputType="number" style="@style/PaddingLRLightText" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_grey" android:gravity="center_vertical" android:layout_width="140.0dip" android:layout_height="fill_parent" android:text="@string/addressSpecialNotes" style="@style/PaddingLRText" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/AddressSpecialNotes" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:maxLength="400" android:inputType="textCapSentences" style="@style/PaddingLRLightText" />
+            <View style="@style/Divider" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_grey" android:gravity="center_vertical" android:layout_width="140.0dip" android:layout_height="fill_parent" android:text="@string/address_default" style="@style/PaddingLRText" />
+        <CheckBox android:id="@id/AddressDefault" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="1" style="@style/RadioButton" />
+    </LinearLayout>
+</LinearLayout>

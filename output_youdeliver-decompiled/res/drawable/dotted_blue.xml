@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/stamps_corner_angle" />
+            <solid android:color="@color/stamp_background_blue" />
+            <stroke android:width="@dimen/stamps_stroke" android:color="@color/stamp_strocke_blue" />
+            <padding android:left="@dimen/stamps_padding" android:top="@dimen/stamps_padding" android:right="@dimen/stamps_padding" android:bottom="@dimen/stamps_padding" />
+        </shape>
+    </item>
+</layer-list>

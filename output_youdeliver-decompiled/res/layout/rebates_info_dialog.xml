@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/rabates_SV" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rebates_info_dialog" android:ems="10" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:background="@drawable/dotted_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/stamp_text_blue" android:gravity="center" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/twenty_percent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/newcustomer_rebate_dialog" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rebates_info_dialog_newcustomer" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:background="@drawable/dotted_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/stamp_text_red" android:gravity="center" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/eight_units" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discount" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rebates_info_dialog_rebate" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/StamCardsDialogView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:background="@drawable/dotted_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/stamp_text_orange" android:gravity="center" android:paddingLeft="16.0dip" android:paddingTop="4.0dip" android:paddingRight="16.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/one_five" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stempel_dialog" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rebates_info_dialog_stamp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/dontShowAgainCHB" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dont_show_this_info_again" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

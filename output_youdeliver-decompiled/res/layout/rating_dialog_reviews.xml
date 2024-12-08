@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/RatingsLayout" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/RestaurantRatingRecommendedItem" android:background="@drawable/background_gree_rating_iteme_rounded" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/text_color_green_rating" android:gravity="center_vertical" android:id="@id/RecommendPercent" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="86%" android:drawableLeft="@drawable/icon_approval" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/list_secondary_text_size" android:textStyle="bold" android:textColor="@color/text_color_rating_grey" android:gravity="center_vertical" android:id="@id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/recommend_this_delivery_service" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/FoodReviewsLayout" android:background="@drawable/background_white_rounded" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/food_quality" android:layout_weight="1.0" />
+            <RatingBar android:layout_gravity="center|right" android:id="@id/FoodRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:progressDrawable="@drawable/review_rating_bar" android:minHeight="30.0dip" android:numStars="5" android:rating="3.3" android:stepSize="0.1" android:isIndicator="true" android:layout_weight="0.0" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" />
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+            <TableRow android:id="@id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rated_very_good" />
+                <ProgressBar android:id="@id/Food5Progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReviewProgress" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_green_rating" android:id="@id/Food5Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+            </TableRow>
+            <TableRow android:id="@id/tableRow2" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rated_good" />
+                <ProgressBar android:id="@id/Food4Progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReviewProgress" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_green_rating" android:id="@id/Food4Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+            </TableRow>
+            <TableRow android:id="@id/tableRow3" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rated_satisfied" />
+                <ProgressBar android:id="@id/Food3Progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReviewProgress" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_green_rating" android:id="@id/Food3Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+            </TableRow>
+            <TableRow android:id="@id/tableRow4" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rated_poor" />
+                <ProgressBar android:id="@id/Food2Progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReviewProgress" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_green_rating" android:id="@id/Food2Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+            </TableRow>
+            <TableRow android:id="@id/tableRow5" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rated_bad" />
+                <ProgressBar android:id="@id/Food1Progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReviewProgress" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_green_rating" android:id="@id/Food1Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/DeliveryReviewsLayout" android:background="@drawable/background_white_rounded" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/deliver_quality" android:layout_weight="1.0" />
+            <RatingBar android:layout_gravity="center|right" android:id="@id/DeliverRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:progressDrawable="@drawable/review_rating_bar" android:minHeight="30.0dip" android:numStars="5" android:rating="3.0" android:stepSize="0.1" android:isIndicator="true" android:layout_weight="0.0" />
+        </LinearLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" />
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rated_very_good" />
+                <ProgressBar android:id="@id/Deliver5Progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReviewProgress" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_green_rating" android:id="@id/Deliver5Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+            </TableRow>
+            <TableRow android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rated_good" />
+                <ProgressBar android:id="@id/Deliver4Progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReviewProgress" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_green_rating" android:id="@id/Deliver4Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+            </TableRow>
+            <TableRow android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rated_satisfied" />
+                <ProgressBar android:id="@id/Deliver3Progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReviewProgress" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_green_rating" android:id="@id/Deliver3Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+            </TableRow>
+            <TableRow android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rated_poor" />
+                <ProgressBar android:id="@id/Deliver2Progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReviewProgress" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_green_rating" android:id="@id/Deliver2Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+            </TableRow>
+            <TableRow android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rated_bad" />
+                <ProgressBar android:id="@id/Deliver1Progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ReviewProgress" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_green_rating" android:id="@id/Deliver1Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ff111111" android:gravity="center_vertical" android:id="@id/textView5" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/users_comments_title" android:drawableLeft="@drawable/icon_testimonials" />
+</LinearLayout>

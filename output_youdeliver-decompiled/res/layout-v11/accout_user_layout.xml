@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/abs__search_plate" android:background="@color/top_grey_background" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/AccountPhoto" android:layout_width="@dimen/profile_top_image_size" android:layout_height="@dimen/profile_top_image_size" android:src="@drawable/no_user_photo" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textStyle="bold" android:id="@id/user_full_name" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/AccountPhoto" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:background="@drawable/bg_wood" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/MainAccountButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_account" android:drawableLeft="@drawable/acc_account" style="@style/list_button_top" />
+                <Button android:id="@id/MainAddresse" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_address" android:drawableLeft="@drawable/icon_house" style="@style/list_button" />
+                <ImageView android:id="@id/dividerHeader1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layerType="software" />
+                <ImageView android:id="@id/dividerHeader2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layerType="software" />
+                <RelativeLayout android:id="@id/MainPoints" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/list_button">
+                    <TextView android:textSize="@dimen/list_button_text_size" android:textStyle="bold" android:textColor="@color/text_color_selector" android:gravity="center" android:id="@id/titleButton" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/main_points" android:drawableLeft="@drawable/icon_sun" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chevron_default" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textStyle="bold" android:textColor="@color/text_grey" android:gravity="center" android:id="@id/totalFidelityPoints" android:background="@drawable/input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:minWidth="40.0dip" android:layout_alignBaseline="@id/titleButton" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <Button android:id="@id/StempList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stempel_cards" android:drawableLeft="@drawable/icon_stempelkarte" style="@style/list_button_bottom" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/MainOrders" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/list_button_top">
+                    <TextView android:textSize="@dimen/list_button_text_size" android:textStyle="bold" android:textColor="@color/text_color_selector" android:gravity="center" android:id="@id/titleOrders" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/main_orders" android:layout_toRightOf="@id/titleOrdersImg" />
+                    <TextView android:textStyle="bold" android:textColor="@color/text_grey" android:gravity="center" android:id="@id/totalOrders" android:background="@drawable/input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:minWidth="40.0dip" android:layout_alignBaseline="@id/titleOrders" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="@dimen/list_button_text_size" android:textStyle="bold" android:textColor="@color/text_color_selector" android:gravity="center" android:id="@id/ratableTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/rateable" android:layout_below="@id/titleOrders" android:layout_alignLeft="@id/titleOrders" />
+                    <TextView android:textStyle="bold" android:textColor="@color/text_grey" android:gravity="center" android:id="@id/rateableOrders" android:background="@drawable/input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:minWidth="40.0dip" android:layout_alignBaseline="@id/ratableTitle" android:layout_alignParentRight="true" />
+                    <ImageView android:id="@id/titleOrdersImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_action_orders" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chevron_default" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/MainFavorits" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/list_button_bottom">
+                    <TextView android:textSize="@dimen/list_button_text_size" android:textStyle="bold" android:textColor="@color/text_color_selector" android:gravity="center" android:id="@id/titleFavourites" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/main_favorits" android:drawableLeft="@drawable/icon_star" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chevron_default" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textStyle="bold" android:textColor="@color/text_grey" android:gravity="center" android:id="@id/totalFavourites" android:background="@drawable/input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:minWidth="40.0dip" android:layout_alignBaseline="@id/titleFavourites" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/MainHow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_how" android:drawableLeft="@drawable/icon_camera" style="@style/list_button_top" />
+                <Button android:id="@id/MainHelp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_help" android:drawableLeft="@drawable/ic_action_help" style="@style/list_button" />
+                <Button android:id="@id/MainPropose" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lieferando_propose" android:drawableLeft="@drawable/icon_pen" style="@style/list_button" />
+                <Button android:id="@id/MainImpressions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/impressions" android:drawableLeft="@drawable/ic_action_info" style="@style/list_button" />
+                <Button android:id="@id/MainApp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_apps" android:drawableLeft="@drawable/icon_star" style="@style/list_button_bottom" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

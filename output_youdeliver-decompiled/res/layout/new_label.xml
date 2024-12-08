@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/new_lable" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/new_lable_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/Newlabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_lable_text" android:layout_centerInParent="true" />
+</RelativeLayout>
