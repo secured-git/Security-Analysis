@@ -307,7 +307,7 @@ It can lead to the judgment that the absence of new data leaks with extended tim
 
 For this part, actually two different hardware were used. The first one is:
 
-The second is VM, provided by professor but with different JDK (11), android.jar (v24) and settings:
+The second is VM JDK (11), android.jar (v24) and settings:
 
 
 | №  | App                         | Ubuntu 24.04 | VM |
