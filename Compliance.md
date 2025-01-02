@@ -1,5 +1,5 @@
 
-## Section 2: Results and Insights Regarding the Two Privacy Requirements
+## Section 2: GDPR • Results and Insights Regarding the Two Privacy Requirements
 
 ### R1: To verify compliance with R1, we used FlowDroid, a static taint analysis tool, to analyze the com.tado.apk application. The strategy involved the following steps:
 
