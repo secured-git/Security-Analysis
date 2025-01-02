@@ -303,14 +303,14 @@ Since the number of leaks is consistent across different timeout values, it indi
 
 It can lead to the judgment that the absence of new data leaks with extended timeouts implies that the potential leaks described in the previous analyses are genuine and not artifacts of incomplete analysis due to timeout constraints.
 
-### [Optional] Repeat with Different Hardware Setup
+### Different Hardware Setup
 
 For this part, actually two different hardware were used. The first one is:
 
 The second is VM, provided by professor but with different JDK (11), android.jar (v24) and settings:
 
 
-| №  | App                         | Ubuntu 24.04 | Professor’s VM |
+| №  | App                         | Ubuntu 24.04 | VM |
 |----|-----------------------------|--------------|----------------|
 | 1  | com.delhi.metro.dtc         | 3            | 3              |
 | 2  | com.hawaiianairlines.app    | 33           | 27             |
